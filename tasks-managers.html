@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA Compatible" content="ie=edge">
+    <meta name="author" content="Ijeh Stephen">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./styles_managers.css">
+</head> 
+  <body>
+    <div class="wrapper">
+  
+        <div class="box">
+          <h1>Task Manager</h1>
+
+          <div> 
+            <div id="Clock" class="glow">00:00:00</div>
+          </div>
+        </div>
+      
+        <div class="main">
+          <div class="addtasks">
+          <h2>Add Task</h2>
+            <hr>
+          </div>
+          
+          <input type="text" id="tasktext" name="tasktext">
+      
+                <div id="createtask" onclick="add()">
+                  + Add Task
+                </div>
+          
+              <div class="addedtasks">
+                  <h2>Current Tasks</h2>
+                  <hr>
+                  <ul id="taskIncomplete">
+                    <li><input type="checkbox"><label>Take mum shopping</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                    <li><input type="checkbox"><label>Wash daddy's car</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                    <li><input type="checkbox"><label>Wash plates in the kitchen</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                  </ul>
+              </div>
+          
+              <div class="completedtasks">
+                <h2>Completed Tasks</h2>
+                <hr>
+                <ul id="taskComplete">
+                   <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                   <li><input type="checkbox" checked><label>Do laundry</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                   <li><input type="checkbox" checked><label>Eat breakfast</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                </ul>
+              </div>
+          
+        </div>
+        
+      </div>
+    <script src="./script_managers.js"></script>
+</body>
+</html>
